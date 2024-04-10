@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courtney Jeremiah</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="script.js" defer>
+    <link rel="shortcut icon" href="images/CJ_logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ca3c8f057b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="header">
+
+        <div class="container">
+            <div class="bg-layer">
+                <video class="vid-bg" src="images/13495-248644905.mp4" onloadstart="this.playbackRate = 0.5;" autoplay
+                    muted loop></video>
+            </div>
+            <nav>
+                <img src="images/CJ_logo.png" class="logo" height="150px" width="150px">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Aspiring Developer</p>
+                <h1>Hi, I'm <span>Courtney</span> Jeremiah<br>From London</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -----------------------about----------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/BCA66350-C31A-4ABB-8735-31207E06E14C.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Hello, I'm Courtney, an aspiring software developer with a background in graphic design and a
+                        passion for creativity in all its forms. My journey began with a love for visual storytelling
+                        and a fascination with technology's potential to enhance it.<br>
+
+                        As a graphic designer, I've cultivated a keen eye for aesthetics and a deep understanding of
+                        user experience. Crafting captivating designs and intuitive interfaces has always been my forte.
+                        I thrive on the challenge of translating abstract concepts into tangible, visually compelling
+                        creations.<br>
+
+                        Driven by a curiosity for technology, I've embarked on a path to merge my design skills with
+                        software development. Learning new languages and frameworks excites me, as does the prospect of
+                        bringing my creative sensibilities to the world of coding.<br>
+
+                        With a commitment to lifelong learning and a versatile skill set spanning design and
+                        development, I'm poised to make a meaningful impact in the dynamic intersection of technology
+                        and design. I'm ready to tackle challenges, innovate solutions, and bring imaginative ideas to
+                        life in the digital realm.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend</span><br>HTML, CSS, JavaScript, React, Tailwind</li>
+                            <li><span>Backend</span><br>Python, JavaScript</li>
+                            <li><span>Database</span><br>SQL, Python</li>
+                            <li><span>Grapic Design</span><br>Adobe Creative Cloud, Canva</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2018 - Current</span><br>6 years of customer assistance experience at M&S</li>
+                            <li><span>2023</span><br>Stylist for Sony Records</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>Enrolled in a 12 week bootcamp where I learned the fundamentals of
+                                frontend and backend
+                                development<br>HTML, CSS, JavaScript, Python, SQL</li>
+
+                            <li><span>2024</span><br>Currently learning react and tailwind</li>
+                            <li><span>2023</span><br>A six-week intensive bootcamp covering the fundamentals of Digital
+                                skills allowing me to decide that I wanted to pursue software development as a career.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------ Portfolio ---------------------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/memorygame2.PNG">
+                    <div class="layer">
+                        <h3>Memory Game</h3>
+                        <p>Using JavaScript and HTML I created a fun and interactive memory game in which the user is
+                            timed and counted on how many turns they took to complete the game.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/ai_img_gen_sample.PNG">
+                    <div class="layer">
+                        <h3>AI Image Generator</h3>
+                        <p>Using React, CSS and DALL-E API by openAI I was able to create a simple and user friendly
+                            interface where
+                            the user can generate images as simple or as complex as they can imagine!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/FilmFlixDB.PNG">
+                    <div class="layer">
+                        <h3>FilmFlix Database</h3>
+                        <p>Using SQLite3 and Python I created a film database with CRUD functionality allowing me to
+                            manipulate and present the data how I want.</p>
+                        <a href="https://replit.com/@courtneyj01cj/FilmFlixDB#main.py"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Cjeremiah4" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ------------------------------------contact------------------------------------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> courtneyj01@hotmail.co.uk</p>
+                    <p><i class="fa-solid fa-phone"></i> 07495034022</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/courtney-jeremiah-964163225/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Cjeremiah4"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/Courtney_Jeremiah_CV_.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Courtney Jeremiah <i class="fa-regular fa-copyright"></i> 2024</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby_gaE649HxQPet8UwyJA9SDC9RsNk7d99n113us2WnblQAHTuF-BYUi4sAfq92nNfW/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully!"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
